@@ -9,15 +9,17 @@ import Contact from '../pages/Contact';
 
 const App = () => {
     return (
-        <div className='bg-indigo-200'>
+        <div className='bg-indigo-200 py-10'>
             <BrowserRouter>
                 <Header />
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/about_me" element={<AboutMe />} />
-                    <Route path="/contact" element={<Contact />} />
-                    <Route path="/portfolio" element={<Portfolio />} />
-                </Routes>
+                <div className='flex py-10 my-10 w-min justify-center'>
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/about_me" element={<AboutMe />} />
+                        <Route path="/contact" element={<Contact />} />
+                        <Route path="/portfolio" element={<Portfolio />} />
+                    </Routes>
+                </div>
             </BrowserRouter>
             <Footer />
         </div>
