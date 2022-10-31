@@ -2,12 +2,12 @@ import React from 'react';
 import Navigation from './Navigation'
 
 const style = {
-    backgroundColor: "#1f2647"
+    backgroundColor: "#14182b"
 };
 
 const Header = () => {
     return (
-        <div style={style} className="drop-shadow-2xl z-50">
+        <div style={style} className=" fixed drop-shadow-2xl z-50 w-full">
             <Navigation />
         </div>
     )
