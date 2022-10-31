@@ -4,7 +4,7 @@ const Intro = () => {
     return (
 
 
-        <div className="card lg:card-side shadow-xl w-full bg-gradient-to-t from-blue-500 to-transparent ..." style={{ backgroundColor: "#1f2647" }}>
+        <div className="card lg:card-side shadow-xl h-full w-auto bg-gradient-to-t from-blue-500 to-transparent ..." style={{ backgroundColor: "#1f2647" }}>
             <div className="card-body text-white">
                 <h2 className="card-title">Nice to meet you!</h2>
                 <p>As a Full-Stack Developer, I have the capcity to work on front-end and back-end applications. I specialize in JavaScript programming and database management and quite enjoy discovering new ways to design applications with React.

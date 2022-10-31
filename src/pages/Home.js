@@ -9,8 +9,8 @@ const Home = () => {
 
             <Hero />
 
-            <div class="flex flex-col lg:flex-row w-40 justify-around ...">
-                <div className="flex-2 card glass m-5 p-5 w-auto h-auto">
+            <div class="flex flex-col lg:flex-row w-auto justify-around ...">
+                <div className="card glass m-5 p-5 w-auto h-auto">
                     <Skills />
                 </div>
                 <div className=" flex-1 my-3 p-5 w-auto h-auto drop-shadow-2xl">
