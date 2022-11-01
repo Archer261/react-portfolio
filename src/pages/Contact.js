@@ -1,44 +1,48 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from 'react';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
-    const [status, setStatus] = useState("Submit");
-    const handleSubmit = async (e) => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
         e.preventDefault();
-        setStatus("Sending...");
-        const { name, email, message } = e.target.elements;
-        let details = {
-            name: name.value,
-            email: email.value,
-            message: message.value,
-        };
-        let response = await fetch("http://localhost:5000/contact", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json;charset=utf-8",
-            },
-            body: JSON.stringify(details),
-        });
-        setStatus("Submit");
-        let result = await response.json();
-        alert(result.status);
-    };
+
+        emailjs.sendForm(
+            'gmail',
+            'service_7nt3igp',
+            form.current,
+            'XbYyiixvcZuP-FXGj')
+            .then((res) => {
+                console.log(res.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+    }
     return (
-        <form onSubmit={handleSubmit}>
-            <div>
-                <label htmlFor="name">Name:</label>
-                <input type="text" id="name" required />
+        <div className='container flex flex-row justify-between bg-white p-5 rounded-lg max-w-screen h-auto'>
+            <div className='container flex flex-col p-10'>
+                <h2 className='px-10'>Contact Me!</h2>
             </div>
-            <div>
-                <label htmlFor="email">Email:</label>
-                <input type="email" id="email" required />
+
+            <div className="divider lg:divider-horizontal"></div>
+
+            <div className='container flex flex-col'>
+                <div className="container flex flex-col h-full w-auto p-2" ref={form} onSubmit={sendEmail}>
+                    <div className='container flex flex-col justify-between'>
+                        <label className='m-2'>Name</label>
+                        <input className='input input-bordered input-accent w-full max-w-xs' type="text" name="user_name" />
+                        <label className='my-2'>Email</label>
+                        <input className='input input-bordered input-accent w-full max-w-xs' type="email" name="user_email" />
+                        <label className='my-2'>Message</label>
+                        <textarea className='textarea textarea-accent bg-white' name="message" />
+                    </div>
+                    <div className='py-2'>
+                        <input className="btn btn-active btn-success py-2 my-2" type="submit" value="Send" />
+                    </div>
+                </div>
             </div>
-            <div>
-                <label htmlFor="message">Message:</label>
-                <textarea id="message" required />
-            </div>
-            <button type="submit">{status}</button>
-        </form>
+        </div>
     );
-};
+}
 
 export default Contact;

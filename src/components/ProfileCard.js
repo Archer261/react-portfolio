@@ -4,7 +4,7 @@ import React from 'react';
 const PortfolioCard = () => {
     return (
 
-        <div class="bg-white shadow-lg shadow-gray-200 rounded-2xl sm:p-6 xl:p-8 rounded-lg w-full h-auto mx-5 px-5">
+        <div class="container bg-white shadow-lg shadow-gray-200 rounded-2xl sm:p-6 xl:p-8 rounded-lg w-full h-auto mx-5 px-5">
             <div class="sm:flex xl:block sm:space-x-4 xl:space-x-0">
                 <img class="mb-2 w-20 h-20 rounded-2xl shadow-lg shadow-gray-300" src="../../../assets/soft-ui-flowbite/images/people/profile-picture-5.jpg" alt="Jese portrait" />
                 <div>

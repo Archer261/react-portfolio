@@ -14,25 +14,26 @@ const icons = [{ name: "React.js", url: "https://img.icons8.com/ios-glyphs/240/0
 const Skills = () => {
     return (
         <>
-            <div class="grid justify-items-stretch ...">
+            <div class="container flex justify-items-stretch ...">
                 <h2 className='justify-self-center text-2xl font-extrabold' style={{ color: "#ffde59" }}>Skills</h2>
             </div>
 
             <div className="divider"></div>
 
-            <div class="grid grid-cols-3 gap-1 w-auto h-auto justify-items-center">
-                {/* <div className='justify-center flex flex-row flex-wrap w-auto h-auto'> */}
-                {icons.map((ele) => (
-                    <div className='container flex flex-col '>
-                        <div class="grid justify-items-stretch ...">
+            <div class="container flex w-auto h-auto justify-items-center">
+                <div className='container flex flex-wrap max-w-full h-auto'>
+                    {icons.map((ele) => (
+                        <div className='container flex flex-col w-auto h-auto '>
 
-                            <h3 className='justify-self-center'>{ele.name}</h3>
+                            <div class="container flex justify-items-stretch ...">
+                                <h3 className='justify-self-center'>{ele.name}</h3>
+                            </div>
+
+                            <img className="container flex grow bg-white rounded-full w-20 h-auto p-2 m-5 drop-shadow-2xl" src={ele.url} />
                         </div>
-                        <img className="flex grow bg-white rounded-full w-32 h-auto m2 p-4 m-5 drop-shadow-2xl" src={ele.url} />
-                    </div>
-                )
-                )}
-                {/* </div> */}
+                    )
+                    )}
+                </div>
             </div>
         </>
 

@@ -21,7 +21,7 @@ export default function ProjectsList() {
     }
 
     return (
-        <div className='flex flex-wrap justify-center'>
+        <div className='container flex flex-wrap justify-center'>
             {console.log(projects)}
             {projects.map((ele) => {
                 return <ProjectCard pro={ele} key={ele.id} />

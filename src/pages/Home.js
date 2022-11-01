@@ -5,15 +5,15 @@ import Intro from '../components/Intro';
 
 const Home = () => {
     return (
-        <div class="flex flex-col">
+        <div class="container flex flex-col">
 
             <Hero />
 
-            <div class="flex flex-col lg:flex-row w-auto justify-around ...">
-                <div className="card glass m-5 p-5 w-auto h-auto">
+            <div class="container flex flex-col lg:flex-row justify-center max-w-min...">
+                <div className="card flex-1 glass m-5 pl-10 w-auto h-auto">
                     <Skills />
                 </div>
-                <div className=" flex-1 my-3 p-5 w-auto h-auto drop-shadow-2xl">
+                <div className="container flex-1 my-3 p-5 w-auto h-auto drop-shadow-2xl">
                     <Intro />
                 </div>
             </div>
