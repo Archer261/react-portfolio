@@ -1,27 +1,21 @@
 import React from 'react';
-import ProjectsList from '../components/ProjectsList';
+
 
 const PortfolioCard = () => {
     return (
 
-        <div class="bg-white shadow-lg shadow-gray-200 rounded-2xl p-4 sm:p-6 xl:p-8 mb-6 rounded-lg max-w-min h-auto">
+        <div class="bg-white shadow-lg shadow-gray-200 rounded-2xl sm:p-6 xl:p-8 rounded-lg w-full h-auto mx-5 px-5">
             <div class="sm:flex xl:block sm:space-x-4 xl:space-x-0">
                 <img class="mb-2 w-20 h-20 rounded-2xl shadow-lg shadow-gray-300" src="../../../assets/soft-ui-flowbite/images/people/profile-picture-5.jpg" alt="Jese portrait" />
                 <div>
-                    <h2 class="text-xl font-bold">Alec Thompson</h2>
+                    <h2 class="text-xl font-bold">Joseph Archer</h2>
                     <ul class="mt-2 space-y-1">
                         <li class="flex items-center text-sm font-normal text-gray-500">
                             <svg class="mr-2 w-4 h-4 text-gray-900" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd"></path>
                                 <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"></path>
                             </svg>
-                            CEO / Co-Founder
-                        </li>
-                        <li class="flex items-center text-sm font-normal text-gray-500">
-                            <svg class="mr-2 w-4 h-4 text-gray-900" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
-                            </svg>
-                            San Francisco, USA
+                            Full-Stack Developer
                         </li>
                     </ul>
                 </div>
@@ -30,13 +24,8 @@ const PortfolioCard = () => {
                 <div class="sm:flex-1">
                     <address class="text-sm not-italic font-normal text-gray-500">
                         <div class="mt-4">Email adress</div>
-                        <a class="text-sm font-medium text-gray-900" href="mailto:webmaster@creative-tim.com">yourname@creative-tim.com</a>
-                        <div class="mt-4">Home adress</div>
-                        <div class="mb-2 text-sm font-medium text-gray-900">
-                            92 Miles Drive, Newark, NJ 07103, California,
-                            <br />United States of America
-                        </div>
-                        <div class="mt-4">Phone number</div>
+                        <a class="text-sm font-medium text-gray-900" href="mailto:viewtiful.kja@gmail.com">viewtiful.kja@gmail.com</a>
+                        <div class="mt-4">Linkedin</div>
                         <div class="mb-2 text-sm font-medium text-gray-900">
                             +00 123 456 789 / +12 345 678
                         </div>

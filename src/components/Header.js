@@ -7,7 +7,7 @@ const style = {
 
 const Header = () => {
     return (
-        <div style={style} className=" fixed drop-shadow-2xl z-50 w-full">
+        <div style={style} className=" fixed drop-shadow-2xl z-50 w-full h-fit">
             <Navigation />
         </div>
     )

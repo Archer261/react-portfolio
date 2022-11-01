@@ -1,9 +1,10 @@
 import React from 'react';
+import PortfolioCard from '../components/ProfileCard';
 
 const AboutMe = () => {
-    <div>
-        AboutMe
-    </div>
+    return (
+        <PortfolioCard />
+    )
 };
 
 export default AboutMe

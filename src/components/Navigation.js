@@ -29,15 +29,14 @@ const Navigation = () => {
                     <a className="inline-block py-2 px-4 text-white hover:text-blue-500 font-semibold"><Link to={`/portfolio`}>Portfolio</Link></a>
                 </li>
                 <li className="mr-1">
+                    <a className="inline-block py-2 px-4 text-white hover:text-blue-500 font-semibold"><Link to={`/resume`}>Resume</Link></a>
+                </li>
+                <li className="mr-1">
                     <a className="inline-block py-2 px-4 text-gray-400 font-semibold"><Link to={`/contact`}>Contact</Link></a>
                 </li>
             </ul>
 
-            <div className='flex'>
-                <a href='https://www.linkedin.com/in/kjarcher'><img src="https://img.icons8.com/ios/50/000000/linkedin.png" /></a>
-                <a href='https://www.linkedin.com/in/kjarcher'><img src="https://img.icons8.com/sf-ultralight/50/000000/github.png" /></a>
 
-            </div>
         </div>
 
         // <nav style={{ backgroundColor: "#1f2647" }} className="border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">

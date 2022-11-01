@@ -5,7 +5,6 @@ import PortfolioCard from '../components/ProfileCard';
 const Portfolio = () => {
     return (
         <div>
-            <PortfolioCard />
             <ProjectsList />
         </div>
     )
