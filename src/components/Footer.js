@@ -10,8 +10,8 @@ const Footer = () => {
                     <p>Copyright © 2022 - All right reserved by Joseph Archer</p>
                 </div>
                 <div className='flex mx-5'>
-                    <a href='https://www.linkedin.com/in/kjarcher'><img src="https://img.icons8.com/glyph-neue/64/FFFFFF/linkedin.png" /></a>
-                    <a href='https://github.com/Archer261'><img src="https://img.icons8.com/glyph-neue/64/FFFFFF/github.png" /></a>
+                    <a href='https://www.linkedin.com/in/kjarcher'><img src="https://img.icons8.com/glyph-neue/64/FFFFFF/linkedin.png" alt='linkedin' /></a>
+                    <a href='https://github.com/Archer261'><img src="https://img.icons8.com/glyph-neue/64/FFFFFF/github.png" alt='github' /></a>
 
                 </div>
             </div>

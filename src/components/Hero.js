@@ -5,13 +5,13 @@ import smBanner from '../assets/sm_banner.png'
 const Hero = () => {
 
     // Get current screen width
-    const [width, setWidth] = useState(0);
+    const [width, setWidth] = useState(window.innerWidth);
 
     useEffect(() => {
         const updateWindowDimensions = () => {
             const newWidth = window.innerWidth;
             setWidth(newWidth);
-            console.log("updating width");
+
         };
 
         window.addEventListener("resize", updateWindowDimensions);
@@ -29,7 +29,6 @@ const Hero = () => {
         }
     }
 
-    console.log(width)
 
     return (
         <div className="container flex flex-row rounded-lg justify-center max-w-min...">

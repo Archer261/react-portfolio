@@ -26,7 +26,7 @@ const Skills = () => {
                     {icons.map((ele) => (
                         <div className='container flex flex-col w-auto h-auto '>
 
-                            <div class="container flex justify-center ...">
+                            <div class="container flex justify-center ..." style={{ color: '#14182b' }}>
                                 <h3 className='justify-self-center font-bold text-lg'>{ele.name}</h3>
                             </div>
                             <img className="container flex grow bg-white rounded-full w-20 h-auto p-2 m-5 drop-shadow-2xl" src={ele.url} />
