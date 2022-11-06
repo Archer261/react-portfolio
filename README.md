@@ -28,7 +28,7 @@ MIT
 
 **Project URL**
 
-<https://github.com/Archer261>
+<https://archer261.github.io/react-portfolio/>
 
 **Github Information**
 
