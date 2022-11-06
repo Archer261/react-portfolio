@@ -6,7 +6,7 @@
 
 A React built portfolio that showcases my work to interested parties
 
-[![screenshot](client/assets/reactPort.PNG)](assets/reactPort.PNG)
+[![screenshot](src/assets/reactPort.PNG)](src/assets/reactPort.PNG)
 
 
 ## **Table of Contents**
